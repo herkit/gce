@@ -1,0 +1,18 @@
+{
+  "name": "embedded-google-calendar",
+  "version": "0.0.1",
+  "description": "Embed your Google Calendar with your own styles",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "googleapis": "^37.2.0"
+  }
+}
