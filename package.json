@@ -2,17 +2,28 @@
   "name": "embedded-google-calendar",
   "version": "0.0.1",
   "description": "Embed your Google Calendar with your own styles",
-  "main": "src/index.js",
+  "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "dotenv -e .env nodemon"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "dotenv-cli": "^1.4.0",
+    "nodemon": "^1.18.10",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3"
   },
   "dependencies": {
-    "googleapis": "^37.2.0"
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "googleapis": "^37.2.0",
+    "nconf": "^0.10.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0"
   }
 }

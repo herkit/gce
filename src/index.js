@@ -1,1 +1,0 @@
-document.write("This is your calendar");
