@@ -1,0 +1,14 @@
+@import '_variables';
+
+@import 'list/main.scss';
+
+.fc-custom .fc-event {
+  background-color: $event-color-bg;
+  color: $event-color-fg;
+  border-color: lighten($event-color-bg, 10%);
+}
+
+.fc-custom .fc-today {
+  background-color: $today-color-bg;
+  color: $today-color-fg;
+}
