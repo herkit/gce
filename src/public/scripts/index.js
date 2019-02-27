@@ -3,6 +3,8 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 import listPlugin from '@fullcalendar/list';
 import customThemePlugin from './customtheme/main';
+import allLocales from '@fullcalendar/core/locales-all';
+
 
 /* Include styles */
 import calendarStyle from '@fullcalendar/core/main.css';
@@ -29,6 +31,7 @@ const calendar = new Calendar(el,
     defaultView: 'dayGridMonth',
     googleCalendarApiKey: apiKey,
     locale: locale,
+    locales: allLocales,
     themeSystem: "custom",
     events: {
       googleCalendarId: calendarId 
@@ -36,5 +39,3 @@ const calendar = new Calendar(el,
   }
 );
 calendar.render();
-
-import { Theme, createPlugin } from '@fullcalendar/core'
